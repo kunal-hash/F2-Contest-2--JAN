@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F2-Contest-2--JAN</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="main-container"> <!-- container-whole-content -->
+        <div class="new-employee">
+            <div class="heading">New Employee</div><br>
+            <div class="form-div">
+                <form action="" method="post" id="form">
+
+                    <label for="name">Enter Name</label>
+                    <input type="text" id="name" name="name" value="" required>
+
+                    <label for="prof">Enter Proffesion</label>
+                    <input type="text" id="prof" name="prof" value="" required>
+
+                    <label for="age">Enter Age</label>
+                    <input type="number" id="age" name="age" value="" required><br><br>
+                    
+                    <input type="button" id="button" value="Add User" onclick="AddRow()">
+                </form>
+            </div>
+            <div class="success"></div> <!-- succuss or error message -->
+        </div>
+        <div class="added-employee"> <!-- div for dynamic table -->
+            
+            <table id="show">
+                <tr>
+                <th>Name</th>
+                <th>Proffesion</th>
+                <th>Age</th>
+                </tr>
+            </table>
+
+        </div> 
+    </div> 
+
+    <script src="script.js"></script>
+
 </body>
 </html>
