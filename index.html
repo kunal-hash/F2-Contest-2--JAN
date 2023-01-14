@@ -12,8 +12,7 @@
         <div class="new-employee">
             <div class="heading">New Employee</div><br>
             <div class="form-div">
-                <form action="" method="post" id="form">
-
+                <form action="" name="my-form">
                     <label for="name">Enter Name</label>
                     <input type="text" id="name" name="name" value="" required>
 
@@ -23,10 +22,10 @@
                     <label for="age">Enter Age</label>
                     <input type="number" id="age" name="age" value="" required><br><br>
                     
-                    <input type="button" id="button" value="Add User" onclick="AddRow()">
+                    <input type="button" value="Add User" onclick="AddRow()">
                 </form>
             </div>
-            <div class="success"></div> <!-- succuss or error message -->
+            <div class="success"><p id="message"></p></div> <!-- success or error message -->
         </div>
         <div class="added-employee"> <!-- div for dynamic table -->
             
